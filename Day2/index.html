@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+    </style>
+    <script src="./app.js"></script>
+    <title>Day2</title>
+</head>
+
+<body>
+    <h3>Form 태그 - checkbox</h3>
+    <form action="">
+
+        <input type="checkbox" name="frontend" id="input-html" value="html">
+        <label for="input-html">HTML</label>
+
+        <input type="checkbox" name="frontend" id="input-css" value="css">
+        <label for="input-css">CSS</label>
+sd
+        <input type="checkbox" name="frontend" id="input-js" value="js">
+        <label for="input-js">JS</label>
+
+        <input type="submit" value="제출하기">
+    </form>
+
+    <hr>
+
+    <h3>Form 태그 - select & option</h3>
+    <form action="">
+        <label for="select-stack">개발언어 선택하기</label>
+        <select name="stack" id="select-stack">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option selected value="js">JS</option>
+        </select>
+        <input type="submit" value="제출하기">
+    </form>
+
+    <h3>줄바꿈을 허용하는 input:text요소 - textarea</h3>
+
+    <form action="">
+        <label for="input-title">제목</label>
+        <input type="text" id="input-title" name="title" required>
+        <hr>
+        <label for="input-content">내용</label>
+        <textarea id="input-content" name="content" rows="5" cols="30"></textarea>
+
+        <!-- <input type="submit" value="작성완료"> -->
+
+        <button type="button">단순버튼</button>
+        <button type="submit">제출</button>
+        <!-- <button type="reset">리셋</button> -->
+    </form>
+
+
+    <hr>
+
+    <h3>Table 연습</h3>
+    <!-- 가장 바깥 쪽 : tables -->
+    <!-- 한 줄 : tr -->
+    <!-- 줄의 제목 : th, 줄의 내용 : td -->
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>이름</td>
+            <td>개발분야</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>예지</td>
+            <td rowspan="2">프론트엔드</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>지복</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>미디어 파일 - 오디오, 비디오</h3>
+    <!-- autoplay : 브라우저 진입 시 자동실행 속성 -->
+    <!-- loop : 문한반복 속성 -->
+    <!-- controls : 제어창 표시 속성 -->
+    <audio src="./assects/" autoplay loop></audio>
+    <video src="./assects/" controls></video>
+
+    <!-- 약어 안내 태그 : abbr -->
+    <p>나의 <abbr title="띄워주고 싶은 글자">MBTI</abbr>는 ?입니다.</p>
+
+    <!-- 주소 : address -->
+    <address>
+        <h3>조성빈</h3>
+        <p>sdh220220@sdh.hs.kr</p>
+    </address>
+
+    <!-- 원본 그대로 표시해주는 태그 : pre -->
+    <pre>
+        아무글이나
+        쓰여졌다.
+    </pre>
+    
+    <pre>
+        <code>
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+        </code>
+    </pre>
+
+</body>
+
+</html>
